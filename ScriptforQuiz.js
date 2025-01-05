@@ -1,20 +1,137 @@
 const questions = [
   {
-    question: "ዋት ኢስ ?",
+    question: " አንድ  ሰው  ያለውን  ሀሳብ  ለሌሎች  ከማካፈሉ  በፊት  ማድረግ  ያለበት ",
     answer: [
-      { text: "ስ", correct: false },
-      { text: "ግ", correct: false },
-      { text: "ህ", correct: false },
-      { text: "ጅ", correct: true },
+      { text: " ዋና  ዋና  ነጥቦችን መዝግቦ መያዝ      ", correct: false },
+      { text: " የግንኙነት  መዘዞችን መረዳት", correct: false },
+      { text: " ሰዎች እንዲያምኑህ ማድረግ", correct: false },
+      { text: "ሁሉም", correct: true },
     ],
   },
   {
-    question: "ዋት ኢስ?",
+    question: " አንድ  በትራንስፖርት  ዘርፍ  የተሰማራ  ግለሰብ  ከቦታ  ወደ  ቦታ  በሚንቀሳቀስበት ጊዜ የአከባቢውን ህብረተሰብ       ጠንቅቆ  መረዳት  ሊገጥመው  የሚችለውን  ችግር  ያቃልላል፡፡ ",
     answer: [
-      { text: "ግ", correct: false },
-      { text: "ህ", correct: false },
-      { text: "ሀ", correct: false },
-      { text: "ኢ", correct: true },
+      { text: "ቋንቋ ", correct: false },
+      { text: " ሀይማኖት ", correct: false },
+      { text: ". ባህል ", correct: false },
+      { text: "ሁሉም መልስ ነው", correct: true },
+    ],
+  },
+  {
+    question: " በሁለት  አካላት  መካከል  የሚፈጠርን  ግጭት  ለማብረድ  መውሰድ ያለበት እርምጃ ያልሆነው የቱ ነው?  ",
+    answer: [
+      { text: " ሊያበሳጩ  የሚችሉ  ቃላትን  ከመሰንዘር  መቆጠብ ", correct: false },
+      { text: "  እራስን መቆጣጠር  ", correct: false },
+      { text: ". ከአካባቢው በመራቅ ", correct: false },
+      { text: "ሁሉም መልስ ነው", correct: true },
+    ],
+  },
+  {
+    question: " አንድ  በትራንስፖርት  ዘርፍ  የተሰማራ  ግለሰብ  ከቦታ  ወደ  ቦታ  በሚንቀሳቀስበት ጊዜ የአከባቢውን ህብረተሰብ       ጠንቅቆ  መረዳት  ሊገጥመው  የሚችለውን  ችግር  ያቃልላል፡፡ ",
+    answer: [
+      { text: "ቋንቋ ", correct: false },
+      { text: " ሀይማኖት ", correct: false },
+      { text: ". ባህል ", correct: false },
+      { text: "ሁሉም መልስ ነው", correct: true },
+    ],
+  },
+  {
+    question: " አንድ  በትራንስፖርት  ዘርፍ  የተሰማራ  ግለሰብ  ከቦታ  ወደ  ቦታ  በሚንቀሳቀስበት ጊዜ የአከባቢውን ህብረተሰብ       ጠንቅቆ  መረዳት  ሊገጥመው  የሚችለውን  ችግር  ያቃልላል፡፡ ",
+    answer: [
+      { text: "ቋንቋ ", correct: false },
+      { text: " ሀይማኖት ", correct: false },
+      { text: ". ባህል ", correct: false },
+      { text: "ሁሉም መልስ ነው", correct: true },
+    ],
+  },
+  {
+    question: " አንድ  በትራንስፖርት  ዘርፍ  የተሰማራ  ግለሰብ  ከቦታ  ወደ  ቦታ  በሚንቀሳቀስበት ጊዜ የአከባቢውን ህብረተሰብ       ጠንቅቆ  መረዳት  ሊገጥመው  የሚችለውን  ችግር  ያቃልላል፡፡ ",
+    answer: [
+      { text: "ቋንቋ ", correct: false },
+      { text: " ሀይማኖት ", correct: false },
+      { text: ". ባህል ", correct: false },
+      { text: "ሁሉም መልስ ነው", correct: true },
+    ],
+  },
+  {
+    question: " አንድ  በትራንስፖርት  ዘርፍ  የተሰማራ  ግለሰብ  ከቦታ  ወደ  ቦታ  በሚንቀሳቀስበት ጊዜ የአከባቢውን ህብረተሰብ       ጠንቅቆ  መረዳት  ሊገጥመው  የሚችለውን  ችግር  ያቃልላል፡፡ ",
+    answer: [
+      { text: "ቋንቋ ", correct: false },
+      { text: " ሀይማኖት ", correct: false },
+      { text: ". ባህል ", correct: false },
+      { text: "ሁሉም መልስ ነው", correct: true },
+    ],
+  },
+  {
+    question: " አንድ  በትራንስፖርት  ዘርፍ  የተሰማራ  ግለሰብ  ከቦታ  ወደ  ቦታ  በሚንቀሳቀስበት ጊዜ የአከባቢውን ህብረተሰብ       ጠንቅቆ  መረዳት  ሊገጥመው  የሚችለውን  ችግር  ያቃልላል፡፡ ",
+    answer: [
+      { text: "ቋንቋ ", correct: false },
+      { text: " ሀይማኖት ", correct: false },
+      { text: ". ባህል ", correct: false },
+      { text: "ሁሉም መልስ ነው", correct: true },
+    ],
+  },
+  {
+    question: " አንድ  በትራንስፖርት  ዘርፍ  የተሰማራ  ግለሰብ  ከቦታ  ወደ  ቦታ  በሚንቀሳቀስበት ጊዜ የአከባቢውን ህብረተሰብ       ጠንቅቆ  መረዳት  ሊገጥመው  የሚችለውን  ችግር  ያቃልላል፡፡ ",
+    answer: [
+      { text: "ቋንቋ ", correct: false },
+      { text: " ሀይማኖት ", correct: false },
+      { text: ". ባህል ", correct: false },
+      { text: "ሁሉም መልስ ነው", correct: true },
+    ],
+  },
+  {
+    question: " አንድ  በትራንስፖርት  ዘርፍ  የተሰማራ  ግለሰብ  ከቦታ  ወደ  ቦታ  በሚንቀሳቀስበት ጊዜ የአከባቢውን ህብረተሰብ       ጠንቅቆ  መረዳት  ሊገጥመው  የሚችለውን  ችግር  ያቃልላል፡፡ ",
+    answer: [
+      { text: "ቋንቋ ", correct: false },
+      { text: " ሀይማኖት ", correct: false },
+      { text: ". ባህል ", correct: false },
+      { text: "ሁሉም መልስ ነው", correct: true },
+    ],
+  },
+  {
+    question: " አንድ  በትራንስፖርት  ዘርፍ  የተሰማራ  ግለሰብ  ከቦታ  ወደ  ቦታ  በሚንቀሳቀስበት ጊዜ የአከባቢውን ህብረተሰብ       ጠንቅቆ  መረዳት  ሊገጥመው  የሚችለውን  ችግር  ያቃልላል፡፡ ",
+    answer: [
+      { text: "ቋንቋ ", correct: false },
+      { text: " ሀይማኖት ", correct: false },
+      { text: ". ባህል ", correct: false },
+      { text: "ሁሉም መልስ ነው", correct: true },
+    ],
+  },
+  {
+    question: " አንድ  በትራንስፖርት  ዘርፍ  የተሰማራ  ግለሰብ  ከቦታ  ወደ  ቦታ  በሚንቀሳቀስበት ጊዜ የአከባቢውን ህብረተሰብ       ጠንቅቆ  መረዳት  ሊገጥመው  የሚችለውን  ችግር  ያቃልላል፡፡ ",
+    answer: [
+      { text: "ቋንቋ ", correct: false },
+      { text: " ሀይማኖት ", correct: false },
+      { text: ". ባህል ", correct: false },
+      { text: "ሁሉም መልስ ነው", correct: true },
+    ],
+  },
+  {
+    question: " አንድ  በትራንስፖርት  ዘርፍ  የተሰማራ  ግለሰብ  ከቦታ  ወደ  ቦታ  በሚንቀሳቀስበት ጊዜ የአከባቢውን ህብረተሰብ       ጠንቅቆ  መረዳት  ሊገጥመው  የሚችለውን  ችግር  ያቃልላል፡፡ ",
+    answer: [
+      { text: "ቋንቋ ", correct: false },
+      { text: " ሀይማኖት ", correct: false },
+      { text: ". ባህል ", correct: false },
+      { text: "ሁሉም መልስ ነው", correct: true },
+    ],
+  },
+  {
+    question: " አንድ  በትራንስፖርት  ዘርፍ  የተሰማራ  ግለሰብ  ከቦታ  ወደ  ቦታ  በሚንቀሳቀስበት ጊዜ የአከባቢውን ህብረተሰብ       ጠንቅቆ  መረዳት  ሊገጥመው  የሚችለውን  ችግር  ያቃልላል፡፡ ",
+    answer: [
+      { text: "ቋንቋ ", correct: false },
+      { text: " ሀይማኖት ", correct: false },
+      { text: ". ባህል ", correct: false },
+      { text: "ሁሉም መልስ ነው", correct: true },
+    ],
+  },
+  {
+    question: " አንድ  በትራንስፖርት  ዘርፍ  የተሰማራ  ግለሰብ  ከቦታ  ወደ  ቦታ  በሚንቀሳቀስበት ጊዜ የአከባቢውን ህብረተሰብ       ጠንቅቆ  መረዳት  ሊገጥመው  የሚችለውን  ችግር  ያቃልላል፡፡ ",
+    answer: [
+      { text: "ቋንቋ ", correct: false },
+      { text: " ሀይማኖት ", correct: false },
+      { text: ". ባህል ", correct: false },
+      { text: "ሁሉም መልስ ነው", correct: true },
     ],
   },
 ];
@@ -53,13 +170,13 @@ function checkTimeLimit() {
 }
 
 function startQuiz() {
-  initialTime = 10;
+  initialTime = 30;
   timeElapsed = 0;
   startTimer();
 
   currentQuestionIndex = 0;
   score = 0;
-  nextbtn.innerHTML = "Next";
+  nextbtn.innerHTML = "ቀጣይ";
   showQuestion();
 }
 
@@ -112,7 +229,7 @@ function showScore() {
   resetState();
   questionElement.innerHTML =
    `You scored ${score} out of ${questions.length}!`;
-  nextbtn.innerHTML = "Play Again";
+  nextbtn.innerHTML = "እንደገና ይሞክሩ";
   nextbtn.style.display = "block";//to show hidden HTML element
 }
 
@@ -122,12 +239,12 @@ function handleNextButton() {
     showQuestion();
   } else {
     showScore();
-    nextbtn.innerHTML = "Play Again";
+    nextbtn.innerHTML = "እንደገና ይሞክሩ";
   }
 }
 
 nextbtn.addEventListener("click", () => {
-  if (nextbtn.innerHTML === "Play Again") {
+  if (nextbtn.innerHTML === "እንደገና ይሞክሩ") {
     startQuiz();
   } else {
     handleNextButton(); 
