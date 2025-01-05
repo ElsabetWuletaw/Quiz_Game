@@ -1,3 +1,23 @@
+const questions = [
+  {
+    question: "ዋት ኢስ ?",
+    answer: [
+      { text: "ስ", correct: false },
+      { text: "ግ", correct: false },
+      { text: "ህ", correct: false },
+      { text: "ጅ", correct: true },
+    ],
+  },
+  {
+    question: "ዋት ኢስ?",
+    answer: [
+      { text: "ግ", correct: false },
+      { text: "ህ", correct: false },
+      { text: "ሀ", correct: false },
+      { text: "ኢ", correct: true },
+    ],
+  },
+];
 const questionElement = document.getElementById("question");
 const answerBtns = document.getElementById("answer-buttons");
 const nextbtn = document.getElementById("next-btn");
@@ -20,8 +40,7 @@ function updateTimerDisplay() {
   const remainingTime = initialTime - timeElapsed;
   const minutes = Math.floor(remainingTime / 60);
   const seconds = remainingTime % 60;
-  const formattedTime = 
-  `${minutes}:${seconds.toString().padStart(2, '0')}`;
+  const formattedTime = `${minutes}:${seconds.toString().padStart(2, "0")}`;
   timerElement.textContent = formattedTime;
 }
 
@@ -33,13 +52,13 @@ function checkTimeLimit() {
 }
 
 function startQuiz() {
-  initialTime = 30;
+  initialTime = 10;
   timeElapsed = 0;
   startTimer();
 
   currentQuestionIndex = 0;
   score = 0;
-  nextbtn.innerHTML = "ቀጣይ";
+  nextbtn.innerHTML = "Next";
   showQuestion();
 }
 
@@ -47,10 +66,9 @@ function showQuestion() {
   resetState();
   let currentQuestion = questions[currentQuestionIndex];
   let questionNO = currentQuestionIndex + 1;
-  questionElement.innerHTML = 
-  questionNO + ". " + currentQuestion.question;
+  questionElement.innerHTML = questionNO + ". " + currentQuestion.question;
 
-  currentQuestion.answer.forEach(answer => {
+  currentQuestion.answer.forEach((answer) => {
     const button = document.createElement("button");
     button.innerHTML = answer.text;
     button.classList.add("btn");
@@ -78,7 +96,7 @@ function selectAnswer(e) {
   } else {
     selectedBtn.classList.add("incorrect");
   }
-  Array.from(answerBtns.children).forEach(button => {
+  Array.from(answerBtns.children).forEach((button) => {
     if (button.dataset.correct === "true") {
       button.classList.add("correct");
     }
@@ -90,10 +108,9 @@ function selectAnswer(e) {
 function showScore() {
   clearInterval(timerInterval); // Stop the timer
   resetState();
-  questionElement.innerHTML =
-   `You scored ${score} out of ${questions.length}!`;
-  nextbtn.innerHTML = "እንደገና ይሞክሩ";
-  nextbtn.style.display = "block";//to show hidden HTML element
+  questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
+  nextbtn.innerHTML = "Play Again";
+  nextbtn.style.display = "block"; //to show hidden HTML element
 }
 
 function handleNextButton() {
@@ -102,15 +119,15 @@ function handleNextButton() {
     showQuestion();
   } else {
     showScore();
-    nextbtn.innerHTML = "እንደገና ይሞክሩ";
+    nextbtn.innerHTML = "Play Again";
   }
 }
 
 nextbtn.addEventListener("click", () => {
-  if (nextbtn.innerHTML === "እንደገና ይሞክሩ") {
+  if (nextbtn.innerHTML === "Play Again") {
     startQuiz();
   } else {
-    handleNextButton(); 
+    handleNextButton();
   }
 });
 
