@@ -1,4 +1,5 @@
 *{
+<<<<<<< HEAD
     margin: 0;
     padding: 0;
     font-family:Arial, Helvetica, sans-serif;
@@ -75,3 +76,7 @@
     font-size: 40px;
     color:rgb(55, 0, 255)
   }
+=======
+  background-color: red;
+}
+>>>>>>> c48c32992a84f1bd367f02908f77d219e9ee7251
